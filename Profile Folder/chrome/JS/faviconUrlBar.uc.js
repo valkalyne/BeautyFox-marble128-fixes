@@ -29,7 +29,7 @@
 
 
 		document.getElementsByClassName('urlbar-input-container')[0].prepend(favimginurlbar);
-		console.log("created favicon")
+
 		// update script every time a tab attribute gets modified
 		document.addEventListener("TabAttrModified", updateIcon, false);
 		document.addEventListener('TabSelect', updateIcon, false);
@@ -54,9 +54,7 @@
 
 		}
 
-	} catch(e) {
-		console.error(e.type)
-	}
+	} catch(e) {}
 	
 })();
   
