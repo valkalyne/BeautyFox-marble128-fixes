@@ -46,7 +46,7 @@ window.addEventListener("TabAttrModified", secureStateTextFieldBackground)
 function removeReloadWhenTyping() {
 	var refreshBtn = document.getElementById("stop-reload-button");
 	const reloadButton = document.getElementById("reload-button");
-	const urlbarInputContainer = document.getElementById("urlbar-input-container");
+	const urlbarInputContainer = document.getElementsByClassName('urlbar-input-container')[0];
 	const urlbar = document.getElementById("urlbar");
 	const urlbarObserverConfig = { attributes: true, childList: false, subtree: false };
 	const urlbarObserverCallback = (mutationList) => {

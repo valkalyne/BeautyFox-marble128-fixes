@@ -9,7 +9,7 @@ function createFakeTitlebarSpace() {
         var fakeTitlebarSpace = document.createXULElement("vbox");
         fakeTitlebarSpace.id = "fakeTitlebarSpace";
 
-        var parentElement = document.querySelector("#navigator-toolbox-background");
+        var parentElement = document.querySelector("#navigator-toolbox");
         parentElement.parentNode.insertBefore(fakeTitlebarSpace, parentElement);
 
         var titlebarButtonboxContainers = document.querySelectorAll(".titlebar-buttonbox-container");

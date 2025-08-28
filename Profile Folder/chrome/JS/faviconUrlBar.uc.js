@@ -28,8 +28,8 @@
 		favimginurlbar.setAttribute("onclick","gIdentityHandler.handleMoreInfoClick(event);");
 
 
-		document.getElementById('urlbar-input-container').prepend(favimginurlbar);
-
+		document.getElementsByClassName('urlbar-input-container')[0].prepend(favimginurlbar);
+		console.log("created favicon")
 		// update script every time a tab attribute gets modified
 		document.addEventListener("TabAttrModified", updateIcon, false);
 		document.addEventListener('TabSelect', updateIcon, false);
@@ -54,7 +54,9 @@
 
 		}
 
-	} catch(e) {}
-
+	} catch(e) {
+		console.error(e.type)
+	}
+	
 })();
   
